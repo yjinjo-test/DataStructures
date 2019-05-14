@@ -20,10 +20,14 @@ public class Notebook extends Computer {
     }
 
     public static void main(String[] args) {
-
-        Notebook test = new Notebook("Dell", "i5", 4, 1000,
+        /*The heart of OOP: Polymorphism
+         * Reference type variable test in the parent class can refer
+         * child's class object*/
+        Computer test = new Notebook("Dell", "i5", 4, 1000,
                 3.2, 15.6, 1.2);
 
-        System.out.println("Computer Power: " + test.computerPower());
+        /*Dynamic Binding: In Java, there is always call method in the
+        same class' method, not in parent class' method*/
+        System.out.println(test.toString());
     }
 }
