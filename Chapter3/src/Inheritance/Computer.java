@@ -1,11 +1,11 @@
 package Inheritance;
 
 public class Computer {
-    public String manufacturer;
-    public String processor;
-    public int ramSize;
-    public int diskSize;
-    public double processorSpeed;
+    private String manufacturer;
+    private String processor;
+    private int ramSize;
+    private int diskSize;
+    private double processorSpeed;
 
     public Computer(String manufacturer, String processor, int ramSize, int diskSize, double processorSpeed) {
         this.manufacturer = manufacturer;

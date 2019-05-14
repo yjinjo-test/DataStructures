@@ -10,7 +10,13 @@ public class Notebook extends Computer {
 
         screenSize = screen;
         this.weight = weight;
+    }
 
+    /*Method Overriding: Modify code inherited from parent class*/
+    public String toString() {
+        String result = super.toString() +
+                "\nScreen Size:  " + screenSize +" inches" +
+                "\nWeight: " + weight + " kg";
     }
 
     public static void main(String[] args) {
