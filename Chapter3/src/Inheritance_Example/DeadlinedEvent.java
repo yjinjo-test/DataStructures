@@ -1,11 +1,10 @@
 package Inheritance_Example;
 
-public class DeadlinedEvent {
-    public String title;
+public class DeadlinedEvent extends CommonEvent {
     public MyDate deadline;
 
     public DeadlinedEvent(String title, MyDate date) {
-        this.title = title;
+        super(title);
         this.deadline = date;
     }
 
